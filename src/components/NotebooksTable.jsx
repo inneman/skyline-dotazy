@@ -2,10 +2,10 @@ import React from "react";
 
 function NotebooksTable({ notebooks, title }) {
   return (
-    <div className="container mt-4">
-      <h2 className="mb-3">{title}</h2>
-      <div style={{ maxHeight: "400px", overflowY: "auto" }}>
-        <table className="table table-striped table-bordered">
+    <div className="card mb-3">
+      <div className="card-header bg-dark text-white">{title}</div>
+      <div className="card-body p-0" style={{ maxHeight: "300px", overflowY: "auto" }}>
+        <table className="table table-sm table-striped mb-0">
           <thead className="table-dark sticky-top">
             <tr>
               <th>#</th>
