@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Skyline Query Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Semestrální práce z předmětu Algoritmy a datové struktury
 
-## Available Scripts
+### O projektu
 
-In the project directory, you can run:
+Tento projekt implementuje interaktivní webovou aplikaci pro demonstraci konceptu **skyline dotazů** (skyline queries) a různých algoritmů pro jejich efektivní výpočet. Skyline dotazy umožňují nalezení objektů, které nejsou dominovány jinými objekty v datové sadě podle více kritérií současně.
 
-### `npm start`
+### Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Aplikace je dostupná online na: [odkaz na live demo]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot aplikace](screenshot.png)
 
-### `npm test`
+### Funkce
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Vizualizace notebooků a jejich parametrů ve 2D grafu
+- Implementace 4 algoritmů pro výpočet skyline:
+  - Brute-force (O(n²))
+  - Divide & Conquer (O(n·log²n))
+  - Sort Filter Skyline (O(n·log n))
+  - Maxima Finding (O(n·log n))
+- Interaktivní výběr parametrů pro porovnání
+- Pokročilé měření výkonu algoritmů s přesností na nanosekundy
+- Vizualizace skyline pomocí "schodovitých" linií
 
-### `npm run build`
+### Instalace a spuštění
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Požadavky
+- Node.js (v14+)
+- npm nebo yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Kroky pro spuštění
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Klonování repozitáře:**
+   ```bash
+   git clone https://github.com/username/skyline-query-explorer.git
+   cd skyline-query-explorer```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
