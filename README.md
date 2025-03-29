@@ -1,6 +1,4 @@
-# Skyline Query Explorer
-
-## Semestrální práce z předmětu Algoritmy a datové struktury
+# Vizualizace Skyline dotazů
 
 ### O projektu
 
