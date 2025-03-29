@@ -13,1590 +13,230 @@
     "vykon": 87,
     "vaha": 1.17,
     "cena": 38970,
-    "vydrz": 6
+    "vydrz": 10
   },
   {
     "id": 3,
     "nazev": "Samsung Galaxy Book Pro",
-    "vykon": 63,
-    "vaha": 1.41,
-    "cena": 17718,
-    "vydrz": 10
-  },
-  {
-    "id": 4,
-    "nazev": "MSI Prestige 14 Edition",
-    "vykon": 95,
-    "vaha": 1.68,
-    "cena": 34088,
-    "vydrz": 14
-  },
-  {
-    "id": 5,
-    "nazev": "LG Gram 14 Pro",
-    "vykon": 59,
-    "vaha": 1.1,
-    "cena": 38725,
-    "vydrz": 13
-  },
-  {
-    "id": 6,
-    "nazev": "LG Gram 14 Pro",
-    "vykon": 77,
-    "vaha": 1.04,
-    "cena": 47950,
-    "vydrz": 9
-  },
-  {
-    "id": 7,
-    "nazev": "Lenovo ThinkPad X1 Carbon Max",
-    "vykon": 50,
-    "vaha": 1.06,
-    "cena": 26346,
-    "vydrz": 16
-  },
-  {
-    "id": 8,
-    "nazev": "Apple MacBook Air Edition",
-    "vykon": 54,
-    "vaha": 1.67,
-    "cena": 41848,
+    "vykon": 82,
+    "vaha": 1.31,
+    "cena": 42999,
     "vydrz": 12
   },
   {
-    "id": 9,
-    "nazev": "HP Spectre x360 Plus",
+    "id": 4,
+    "nazev": "HP Spectre x360",
     "vykon": 88,
-    "vaha": 1.04,
-    "cena": 32433,
+    "vaha": 1.40,
+    "cena": 49999,
+    "vydrz": 13
+  },
+  {
+    "id": 5,
+    "nazev": "Lenovo ThinkPad X1 Carbon",
+    "vykon": 94,
+    "vaha": 1.20,
+    "cena": 74999,
+    "vydrz": 14
+  },
+  {
+    "id": 6,
+    "nazev": "Apple MacBook Air M2",
+    "vykon": 95,
+    "vaha": 1.25,
+    "cena": 69999,
+    "vydrz": 13
+  },
+  {
+    "id": 7,
+    "nazev": "Asus ZenBook 14",
+    "vykon": 85,
+    "vaha": 1.33,
+    "cena": 45999,
+    "vydrz": 12
+  },
+  {
+    "id": 8,
+    "nazev": "Acer Swift 3",
+    "vykon": 80,
+    "vaha": 1.55,
+    "cena": 34999,
+    "vydrz": 11
+  },
+  {
+    "id": 9,
+    "nazev": "Microsoft Surface Laptop 4",
+    "vykon": 90,
+    "vaha": 1.32,
+    "cena": 62999,
     "vydrz": 14
   },
   {
     "id": 10,
-    "nazev": "Acer Aspire 7 Max",
-    "vykon": 64,
-    "vaha": 1.33,
-    "cena": 30851,
-    "vydrz": 16
+    "nazev": "LG Gram 17",
+    "vykon": 83,
+    "vaha": 1.38,
+    "cena": 54999,
+    "vydrz": 15
   },
   {
     "id": 11,
-    "nazev": "Microsoft Surface Laptop Plus",
-    "vykon": 59,
-    "vaha": 1.9,
-    "cena": 30518,
-    "vydrz": 10
+    "nazev": "Razer Book 13",
+    "vykon": 86,
+    "vaha": 1.29,
+    "cena": 67999,
+    "vydrz": 11
   },
   {
     "id": 12,
-    "nazev": "Google Pixelbook Go Edition",
-    "vykon": 95,
-    "vaha": 1.02,
-    "cena": 45154,
-    "vydrz": 10
+    "nazev": "MSI Prestige 14",
+    "vykon": 84,
+    "vaha": 1.47,
+    "cena": 53999,
+    "vydrz": 12
   },
   {
     "id": 13,
-    "nazev": "Google Pixelbook Go Max",
-    "vykon": 75,
-    "vaha": 1.55,
-    "cena": 47898,
-    "vydrz": 8
+    "nazev": "Huawei MateBook X Pro",
+    "vykon": 92,
+    "vaha": 1.21,
+    "cena": 69999,
+    "vydrz": 14
   },
   {
     "id": 14,
-    "nazev": "HP Spectre x360 Pro",
-    "vykon": 76,
-    "vaha": 1.46,
-    "cena": 27274,
-    "vydrz": 7
+    "nazev": "Lenovo Yoga Slim 7",
+    "vykon": 81,
+    "vaha": 1.45,
+    "cena": 42999,
+    "vydrz": 12
   },
   {
     "id": 15,
-    "nazev": "Xiaomi Mi Notebook Pro Pro",
-    "vykon": 60,
-    "vaha": 1.99,
-    "cena": 28307,
-    "vydrz": 13
+    "nazev": "Dell Inspiron 14",
+    "vykon": 78,
+    "vaha": 1.60,
+    "cena": 31999,
+    "vydrz": 10
   },
   {
     "id": 16,
-    "nazev": "Acer Aspire 7 Max",
-    "vykon": 87,
-    "vaha": 1.6,
-    "cena": 33992,
-    "vydrz": 14
+    "nazev": "HP Envy 13",
+    "vykon": 83,
+    "vaha": 1.35,
+    "cena": 38999,
+    "vydrz": 11
   },
   {
     "id": 17,
-    "nazev": "Huawei MateBook D14",
-    "vykon": 88,
-    "vaha": 1.77,
-    "cena": 30026,
-    "vydrz": 12
+    "nazev": "Acer Aspire 5",
+    "vykon": 75,
+    "vaha": 1.70,
+    "cena": 29999,
+    "vydrz": 9
   },
   {
     "id": 18,
-    "nazev": "Dell XPS 13 Edition",
-    "vykon": 62,
-    "vaha": 1.83,
-    "cena": 25006,
-    "vydrz": 13
+    "nazev": "Asus VivoBook S14",
+    "vykon": 79,
+    "vaha": 1.50,
+    "cena": 34999,
+    "vydrz": 10
   },
   {
     "id": 19,
-    "nazev": "Apple MacBook Pro Max",
-    "vykon": 97,
-    "vaha": 1.32,
-    "cena": 32520,
-    "vydrz": 9
+    "nazev": "Microsoft Surface Pro 7",
+    "vykon": 84,
+    "vaha": 1.30,
+    "cena": 59999,
+    "vydrz": 12
   },
   {
     "id": 20,
-    "nazev": "Acer Aspire 7",
-    "vykon": 52,
-    "vaha": 1.46,
-    "cena": 43414,
-    "vydrz": 10
+    "nazev": "Google Pixelbook",
+    "vykon": 80,
+    "vaha": 1.40,
+    "cena": 37999,
+    "vydrz": 11
   },
   {
     "id": 21,
-    "nazev": "Google Pixelbook Go",
-    "vykon": 72,
-    "vaha": 1.88,
-    "cena": 18202,
-    "vydrz": 6
+    "nazev": "Apple MacBook Pro M1",
+    "vykon": 96,
+    "vaha": 1.37,
+    "cena": 84999,
+    "vydrz": 13
   },
   {
     "id": 22,
-    "nazev": "Apple MacBook Air",
-    "vykon": 63,
-    "vaha": 1.47,
-    "cena": 32765,
-    "vydrz": 10
+    "nazev": "Dell Latitude 7420",
+    "vykon": 88,
+    "vaha": 1.42,
+    "cena": 69999,
+    "vydrz": 12
   },
   {
     "id": 23,
-    "nazev": "Lenovo ThinkPad X1 Carbon Edition",
-    "vykon": 72,
-    "vaha": 1.99,
-    "cena": 18997,
-    "vydrz": 13
+    "nazev": "HP Elite Dragonfly",
+    "vykon": 90,
+    "vaha": 1.18,
+    "cena": 89999,
+    "vydrz": 15
   },
   {
     "id": 24,
-    "nazev": "Apple MacBook Pro Pro",
-    "vykon": 55,
-    "vaha": 1.84,
-    "cena": 37204,
-    "vydrz": 9
+    "nazev": "Lenovo IdeaPad 5",
+    "vykon": 77,
+    "vaha": 1.65,
+    "cena": 35999,
+    "vydrz": 10
   },
   {
     "id": 25,
-    "nazev": "Apple MacBook Air Plus",
-    "vykon": 91,
-    "vaha": 1.56,
-    "cena": 20797,
-    "vydrz": 9
+    "nazev": "Asus TUF Gaming",
+    "vykon": 85,
+    "vaha": 2.20,
+    "cena": 47999,
+    "vydrz": 8
   },
   {
     "id": 26,
-    "nazev": "Apple MacBook Pro 2024",
-    "vykon": 80,
-    "vaha": 1.23,
-    "cena": 38827,
-    "vydrz": 6
+    "nazev": "Acer Nitro 5",
+    "vykon": 82,
+    "vaha": 2.30,
+    "cena": 45999,
+    "vydrz": 9
   },
   {
     "id": 27,
-    "nazev": "Xiaomi Mi Notebook Pro Edition",
-    "vykon": 92,
-    "vaha": 1.12,
-    "cena": 27121,
-    "vydrz": 13
+    "nazev": "MSI Modern 14",
+    "vykon": 87,
+    "vaha": 1.55,
+    "cena": 49999,
+    "vydrz": 11
   },
   {
     "id": 28,
-    "nazev": "MSI Prestige 14",
-    "vykon": 61,
-    "vaha": 1.64,
-    "cena": 48918,
-    "vydrz": 8
+    "nazev": "Samsung Notebook 9",
+    "vykon": 80,
+    "vaha": 1.40,
+    "cena": 37999,
+    "vydrz": 10
   },
   {
     "id": 29,
-    "nazev": "Xiaomi Mi Notebook Pro Edition",
-    "vykon": 56,
-    "vaha": 1.43,
-    "cena": 25564,
-    "vydrz": 8
+    "nazev": "LG Gram 14",
+    "vykon": 83,
+    "vaha": 1.36,
+    "cena": 52999,
+    "vydrz": 14
   },
   {
     "id": 30,
-    "nazev": "Acer Aspire 7 Plus",
-    "vykon": 63,
-    "vaha": 1.89,
-    "cena": 45617,
-    "vydrz": 9
-  },
-  {
-    "id": 31,
-    "nazev": "Microsoft Surface Laptop",
-    "vykon": 96,
-    "vaha": 1.52,
-    "cena": 27025,
-    "vydrz": 6
-  },
-  {
-    "id": 32,
-    "nazev": "Apple MacBook Air Plus",
-    "vykon": 65,
-    "vaha": 1.95,
-    "cena": 43321,
-    "vydrz": 14
-  },
-  {
-    "id": 33,
-    "nazev": "Microsoft Surface Laptop Plus",
+    "nazev": "Huawei MateBook D",
     "vykon": 78,
-    "vaha": 1.82,
-    "cena": 23294,
-    "vydrz": 13
-  },
-  {
-    "id": 34,
-    "nazev": "Acer Aspire 7 2024",
-    "vykon": 95,
-    "vaha": 1.33,
-    "cena": 20120,
-    "vydrz": 5
-  },
-  {
-    "id": 35,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 96,
-    "vaha": 1.64,
-    "cena": 49538,
-    "vydrz": 7
-  },
-  {
-    "id": 36,
-    "nazev": "Lenovo ThinkPad X1 Carbon Edition",
-    "vykon": 74,
-    "vaha": 1.06,
-    "cena": 26173,
-    "vydrz": 14
-  },
-  {
-    "id": 37,
-    "nazev": "Apple MacBook Air 2024",
-    "vykon": 84,
-    "vaha": 1.69,
-    "cena": 25958,
-    "vydrz": 16
-  },
-  {
-    "id": 38,
-    "nazev": "Google Pixelbook Go Edition",
-    "vykon": 76,
-    "vaha": 1.68,
-    "cena": 24921,
-    "vydrz": 6
-  },
-  {
-    "id": 39,
-    "nazev": "HP Spectre x360 Max",
-    "vykon": 88,
-    "vaha": 1.97,
-    "cena": 23877,
-    "vydrz": 10
-  },
-  {
-    "id": 40,
-    "nazev": "Lenovo ThinkPad X1 Carbon Pro",
-    "vykon": 61,
-    "vaha": 1.7,
-    "cena": 33966,
-    "vydrz": 6
-  },
-  {
-    "id": 41,
-    "nazev": "Microsoft Surface Laptop Max",
-    "vykon": 85,
-    "vaha": 1.07,
-    "cena": 46396,
-    "vydrz": 15
-  },
-  {
-    "id": 42,
-    "nazev": "Lenovo ThinkPad X1 Carbon Plus",
-    "vykon": 88,
-    "vaha": 1.07,
-    "cena": 39249,
-    "vydrz": 10
-  },
-  {
-    "id": 43,
-    "nazev": "Google Pixelbook Go Max",
-    "vykon": 56,
-    "vaha": 1.58,
-    "cena": 43679,
-    "vydrz": 5
-  },
-  {
-    "id": 44,
-    "nazev": "HP Spectre x360 Max",
-    "vykon": 52,
-    "vaha": 1.78,
-    "cena": 32942,
-    "vydrz": 15
-  },
-  {
-    "id": 45,
-    "nazev": "Dell XPS 13 Pro",
-    "vykon": 82,
-    "vaha": 1.32,
-    "cena": 26948,
+    "vaha": 1.70,
+    "cena": 33999,
     "vydrz": 11
-  },
-  {
-    "id": 46,
-    "nazev": "LG Gram 14 Plus",
-    "vykon": 83,
-    "vaha": 1.98,
-    "cena": 41349,
-    "vydrz": 15
-  },
-  {
-    "id": 47,
-    "nazev": "MSI Prestige 14 Max",
-    "vykon": 56,
-    "vaha": 1.49,
-    "cena": 44874,
-    "vydrz": 9
-  },
-  {
-    "id": 48,
-    "nazev": "Apple MacBook Air Max",
-    "vykon": 70,
-    "vaha": 1.78,
-    "cena": 27717,
-    "vydrz": 15
-  },
-  {
-    "id": 49,
-    "nazev": "Xiaomi Mi Notebook Pro Pro",
-    "vykon": 69,
-    "vaha": 1.33,
-    "cena": 40768,
-    "vydrz": 10
-  },
-  {
-    "id": 50,
-    "nazev": "Google Pixelbook Go 2024",
-    "vykon": 71,
-    "vaha": 1.43,
-    "cena": 22323,
-    "vydrz": 12
-  },
-  {
-    "id": 51,
-    "nazev": "Apple MacBook Air Pro",
-    "vykon": 57,
-    "vaha": 1.22,
-    "cena": 25792,
-    "vydrz": 16
-  },
-  {
-    "id": 52,
-    "nazev": "Apple MacBook Pro Pro",
-    "vykon": 73,
-    "vaha": 1.83,
-    "cena": 25781,
-    "vydrz": 13
-  },
-  {
-    "id": 53,
-    "nazev": "Apple MacBook Pro Edition",
-    "vykon": 97,
-    "vaha": 1.94,
-    "cena": 36259,
-    "vydrz": 16
-  },
-  {
-    "id": 54,
-    "nazev": "Xiaomi Mi Notebook Pro",
-    "vykon": 92,
-    "vaha": 1.53,
-    "cena": 22544,
-    "vydrz": 6
-  },
-  {
-    "id": 55,
-    "nazev": "LG Gram 14 Pro",
-    "vykon": 63,
-    "vaha": 1.18,
-    "cena": 24525,
-    "vydrz": 7
-  },
-  {
-    "id": 56,
-    "nazev": "Dell XPS 13 Edition",
-    "vykon": 83,
-    "vaha": 1.61,
-    "cena": 42638,
-    "vydrz": 13
-  },
-  {
-    "id": 57,
-    "nazev": "Samsung Galaxy Book 2024",
-    "vykon": 76,
-    "vaha": 1.98,
-    "cena": 26300,
-    "vydrz": 11
-  },
-  {
-    "id": 58,
-    "nazev": "HP Spectre x360 Max",
-    "vykon": 58,
-    "vaha": 1.8,
-    "cena": 39302,
-    "vydrz": 5
-  },
-  {
-    "id": 59,
-    "nazev": "Google Pixelbook Go Max",
-    "vykon": 71,
-    "vaha": 1.16,
-    "cena": 37924,
-    "vydrz": 14
-  },
-  {
-    "id": 60,
-    "nazev": "HP Spectre x360 2024",
-    "vykon": 67,
-    "vaha": 1.03,
-    "cena": 34692,
-    "vydrz": 8
-  },
-  {
-    "id": 61,
-    "nazev": "MSI Prestige 14",
-    "vykon": 82,
-    "vaha": 1.67,
-    "cena": 34621,
-    "vydrz": 14
-  },
-  {
-    "id": 62,
-    "nazev": "Huawei MateBook D14 Edition",
-    "vykon": 80,
-    "vaha": 1.01,
-    "cena": 32908,
-    "vydrz": 7
-  },
-  {
-    "id": 63,
-    "nazev": "Asus ZenBook 14 Pro",
-    "vykon": 64,
-    "vaha": 1.73,
-    "cena": 32108,
-    "vydrz": 14
-  },
-  {
-    "id": 64,
-    "nazev": "Apple MacBook Air Max",
-    "vykon": 68,
-    "vaha": 1.7,
-    "cena": 46315,
-    "vydrz": 7
-  },
-  {
-    "id": 65,
-    "nazev": "Xiaomi Mi Notebook Pro Pro",
-    "vykon": 67,
-    "vaha": 1.17,
-    "cena": 16742,
-    "vydrz": 14
-  },
-  {
-    "id": 66,
-    "nazev": "LG Gram 14 Plus",
-    "vykon": 65,
-    "vaha": 1.54,
-    "cena": 49361,
-    "vydrz": 13
-  },
-  {
-    "id": 67,
-    "nazev": "Google Pixelbook Go",
-    "vykon": 83,
-    "vaha": 1.5,
-    "cena": 29919,
-    "vydrz": 12
-  },
-  {
-    "id": 68,
-    "nazev": "Apple MacBook Pro 2024",
-    "vykon": 68,
-    "vaha": 1.35,
-    "cena": 27109,
-    "vydrz": 5
-  },
-  {
-    "id": 69,
-    "nazev": "Xiaomi Mi Notebook Pro Edition",
-    "vykon": 56,
-    "vaha": 1.27,
-    "cena": 18139,
-    "vydrz": 11
-  },
-  {
-    "id": 70,
-    "nazev": "Xiaomi Mi Notebook Pro",
-    "vykon": 68,
-    "vaha": 1.81,
-    "cena": 15123,
-    "vydrz": 13
-  },
-  {
-    "id": 71,
-    "nazev": "HP Spectre x360",
-    "vykon": 100,
-    "vaha": 1.02,
-    "cena": 33102,
-    "vydrz": 7
-  },
-  {
-    "id": 72,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 77,
-    "vaha": 1.26,
-    "cena": 46554,
-    "vydrz": 10
-  },
-  {
-    "id": 73,
-    "nazev": "MSI Prestige 14 Pro",
-    "vykon": 76,
-    "vaha": 1.97,
-    "cena": 38317,
-    "vydrz": 9
-  },
-  {
-    "id": 74,
-    "nazev": "Microsoft Surface Laptop Edition",
-    "vykon": 94,
-    "vaha": 1.66,
-    "cena": 46129,
-    "vydrz": 13
-  },
-  {
-    "id": 75,
-    "nazev": "Apple MacBook Air Pro",
-    "vykon": 78,
-    "vaha": 1.1,
-    "cena": 48670,
-    "vydrz": 6
-  },
-  {
-    "id": 76,
-    "nazev": "Google Pixelbook Go",
-    "vykon": 69,
-    "vaha": 1.79,
-    "cena": 25047,
-    "vydrz": 13
-  },
-  {
-    "id": 77,
-    "nazev": "Apple MacBook Pro Pro",
-    "vykon": 61,
-    "vaha": 1.91,
-    "cena": 43815,
-    "vydrz": 7
-  },
-  {
-    "id": 78,
-    "nazev": "Samsung Galaxy Book Edition",
-    "vykon": 51,
-    "vaha": 1.6,
-    "cena": 48537,
-    "vydrz": 5
-  },
-  {
-    "id": 79,
-    "nazev": "Asus ZenBook 14",
-    "vykon": 77,
-    "vaha": 1.15,
-    "cena": 30176,
-    "vydrz": 16
-  },
-  {
-    "id": 80,
-    "nazev": "HP Spectre x360",
-    "vykon": 78,
-    "vaha": 1.06,
-    "cena": 15805,
-    "vydrz": 9
-  },
-  {
-    "id": 81,
-    "nazev": "Lenovo ThinkPad X1 Carbon",
-    "vykon": 53,
-    "vaha": 1.65,
-    "cena": 32693,
-    "vydrz": 13
-  },
-  {
-    "id": 82,
-    "nazev": "Microsoft Surface Laptop Plus",
-    "vykon": 95,
-    "vaha": 1.08,
-    "cena": 38296,
-    "vydrz": 6
-  },
-  {
-    "id": 83,
-    "nazev": "Microsoft Surface Laptop 2024",
-    "vykon": 64,
-    "vaha": 1.27,
-    "cena": 19860,
-    "vydrz": 5
-  },
-  {
-    "id": 84,
-    "nazev": "Apple MacBook Air Pro",
-    "vykon": 52,
-    "vaha": 1.03,
-    "cena": 32076,
-    "vydrz": 16
-  },
-  {
-    "id": 85,
-    "nazev": "HP Spectre x360 Edition",
-    "vykon": 99,
-    "vaha": 1.07,
-    "cena": 20678,
-    "vydrz": 11
-  },
-  {
-    "id": 86,
-    "nazev": "Dell XPS 13",
-    "vykon": 85,
-    "vaha": 1.39,
-    "cena": 45160,
-    "vydrz": 15
-  },
-  {
-    "id": 87,
-    "nazev": "Asus ZenBook 14 Edition",
-    "vykon": 71,
-    "vaha": 1.78,
-    "cena": 19546,
-    "vydrz": 12
-  },
-  {
-    "id": 88,
-    "nazev": "Apple MacBook Air Pro",
-    "vykon": 93,
-    "vaha": 1.11,
-    "cena": 41165,
-    "vydrz": 12
-  },
-  {
-    "id": 89,
-    "nazev": "Asus ZenBook 14 Plus",
-    "vykon": 96,
-    "vaha": 1.06,
-    "cena": 46098,
-    "vydrz": 11
-  },
-  {
-    "id": 90,
-    "nazev": "Google Pixelbook Go Max",
-    "vykon": 91,
-    "vaha": 1.66,
-    "cena": 33796,
-    "vydrz": 6
-  },
-  {
-    "id": 91,
-    "nazev": "Google Pixelbook Go 2024",
-    "vykon": 66,
-    "vaha": 1.01,
-    "cena": 28036,
-    "vydrz": 10
-  },
-  {
-    "id": 92,
-    "nazev": "Asus ZenBook 14 Plus",
-    "vykon": 71,
-    "vaha": 1.5,
-    "cena": 40758,
-    "vydrz": 14
-  },
-  {
-    "id": 93,
-    "nazev": "MSI Prestige 14 Edition",
-    "vykon": 90,
-    "vaha": 1.26,
-    "cena": 47514,
-    "vydrz": 9
-  },
-  {
-    "id": 94,
-    "nazev": "MSI Prestige 14 Max",
-    "vykon": 96,
-    "vaha": 1.32,
-    "cena": 46275,
-    "vydrz": 10
-  },
-  {
-    "id": 95,
-    "nazev": "Apple MacBook Air 2024",
-    "vykon": 93,
-    "vaha": 1.34,
-    "cena": 31071,
-    "vydrz": 9
-  },
-  {
-    "id": 96,
-    "nazev": "Apple MacBook Air",
-    "vykon": 76,
-    "vaha": 1.27,
-    "cena": 15224,
-    "vydrz": 8
-  },
-  {
-    "id": 97,
-    "nazev": "Razer Blade 15 2024",
-    "vykon": 67,
-    "vaha": 1.83,
-    "cena": 29300,
-    "vydrz": 11
-  },
-  {
-    "id": 98,
-    "nazev": "Samsung Galaxy Book Plus",
-    "vykon": 50,
-    "vaha": 1.21,
-    "cena": 41040,
-    "vydrz": 7
-  },
-  {
-    "id": 99,
-    "nazev": "Razer Blade 15 Pro",
-    "vykon": 90,
-    "vaha": 1.86,
-    "cena": 46125,
-    "vydrz": 13
-  },
-  {
-    "id": 100,
-    "nazev": "Xiaomi Mi Notebook Pro",
-    "vykon": 53,
-    "vaha": 1.95,
-    "cena": 26619,
-    "vydrz": 11
-  },
-  {
-    "id": 101,
-    "nazev": "HP Spectre x360 Max",
-    "vykon": 75,
-    "vaha": 1.56,
-    "cena": 35140,
-    "vydrz": 9
-  },
-  {
-    "id": 102,
-    "nazev": "Microsoft Surface Laptop Edition",
-    "vykon": 99,
-    "vaha": 1.92,
-    "cena": 37009,
-    "vydrz": 10
-  },
-  {
-    "id": 103,
-    "nazev": "Google Pixelbook Go Plus",
-    "vykon": 97,
-    "vaha": 1.47,
-    "cena": 38537,
-    "vydrz": 5
-  },
-  {
-    "id": 104,
-    "nazev": "LG Gram 14 Pro",
-    "vykon": 52,
-    "vaha": 1.37,
-    "cena": 46890,
-    "vydrz": 6
-  },
-  {
-    "id": 105,
-    "nazev": "Apple MacBook Air Plus",
-    "vykon": 51,
-    "vaha": 1.95,
-    "cena": 29889,
-    "vydrz": 13
-  },
-  {
-    "id": 106,
-    "nazev": "MSI Prestige 14",
-    "vykon": 50,
-    "vaha": 1.7,
-    "cena": 16996,
-    "vydrz": 11
-  },
-  {
-    "id": 107,
-    "nazev": "Acer Aspire 7 2024",
-    "vykon": 79,
-    "vaha": 1.3,
-    "cena": 49713,
-    "vydrz": 6
-  },
-  {
-    "id": 108,
-    "nazev": "HP Spectre x360 Pro",
-    "vykon": 90,
-    "vaha": 1.06,
-    "cena": 46617,
-    "vydrz": 11
-  },
-  {
-    "id": 109,
-    "nazev": "MSI Prestige 14 Max",
-    "vykon": 68,
-    "vaha": 1.35,
-    "cena": 25635,
-    "vydrz": 5
-  },
-  {
-    "id": 110,
-    "nazev": "HP Spectre x360 2024",
-    "vykon": 69,
-    "vaha": 1.44,
-    "cena": 40756,
-    "vydrz": 6
-  },
-  {
-    "id": 111,
-    "nazev": "Asus ZenBook 14",
-    "vykon": 97,
-    "vaha": 1.08,
-    "cena": 41424,
-    "vydrz": 12
-  },
-  {
-    "id": 112,
-    "nazev": "Apple MacBook Air Edition",
-    "vykon": 75,
-    "vaha": 1.24,
-    "cena": 17617,
-    "vydrz": 8
-  },
-  {
-    "id": 113,
-    "nazev": "Xiaomi Mi Notebook Pro",
-    "vykon": 76,
-    "vaha": 1.17,
-    "cena": 15208,
-    "vydrz": 13
-  },
-  {
-    "id": 114,
-    "nazev": "Razer Blade 15 Max",
-    "vykon": 66,
-    "vaha": 1.33,
-    "cena": 35067,
-    "vydrz": 14
-  },
-  {
-    "id": 115,
-    "nazev": "Samsung Galaxy Book 2024",
-    "vykon": 76,
-    "vaha": 1.87,
-    "cena": 42258,
-    "vydrz": 13
-  },
-  {
-    "id": 116,
-    "nazev": "Huawei MateBook D14 Plus",
-    "vykon": 61,
-    "vaha": 1.4,
-    "cena": 45628,
-    "vydrz": 13
-  },
-  {
-    "id": 117,
-    "nazev": "Xiaomi Mi Notebook Pro Max",
-    "vykon": 53,
-    "vaha": 1.56,
-    "cena": 26549,
-    "vydrz": 14
-  },
-  {
-    "id": 118,
-    "nazev": "Razer Blade 15 Max",
-    "vykon": 83,
-    "vaha": 1.27,
-    "cena": 47157,
-    "vydrz": 15
-  },
-  {
-    "id": 119,
-    "nazev": "Huawei MateBook D14 Plus",
-    "vykon": 91,
-    "vaha": 1.29,
-    "cena": 41521,
-    "vydrz": 10
-  },
-  {
-    "id": 120,
-    "nazev": "Acer Aspire 7 Edition",
-    "vykon": 99,
-    "vaha": 1.01,
-    "cena": 45207,
-    "vydrz": 14
-  },
-  {
-    "id": 121,
-    "nazev": "Apple MacBook Pro",
-    "vykon": 58,
-    "vaha": 1.01,
-    "cena": 19726,
-    "vydrz": 8
-  },
-  {
-    "id": 122,
-    "nazev": "Dell XPS 13 Edition",
-    "vykon": 58,
-    "vaha": 1.45,
-    "cena": 16382,
-    "vydrz": 13
-  },
-  {
-    "id": 123,
-    "nazev": "Razer Blade 15",
-    "vykon": 70,
-    "vaha": 1.4,
-    "cena": 24132,
-    "vydrz": 11
-  },
-  {
-    "id": 124,
-    "nazev": "Microsoft Surface Laptop 2024",
-    "vykon": 63,
-    "vaha": 1.24,
-    "cena": 24262,
-    "vydrz": 11
-  },
-  {
-    "id": 125,
-    "nazev": "Razer Blade 15 Edition",
-    "vykon": 53,
-    "vaha": 1.87,
-    "cena": 34430,
-    "vydrz": 9
-  },
-  {
-    "id": 126,
-    "nazev": "Samsung Galaxy Book Edition",
-    "vykon": 79,
-    "vaha": 1.43,
-    "cena": 15683,
-    "vydrz": 6
-  },
-  {
-    "id": 127,
-    "nazev": "Lenovo ThinkPad X1 Carbon Max",
-    "vykon": 73,
-    "vaha": 1.83,
-    "cena": 27596,
-    "vydrz": 11
-  },
-  {
-    "id": 128,
-    "nazev": "Microsoft Surface Laptop Plus",
-    "vykon": 56,
-    "vaha": 1.87,
-    "cena": 37617,
-    "vydrz": 14
-  },
-  {
-    "id": 129,
-    "nazev": "Razer Blade 15 Pro",
-    "vykon": 57,
-    "vaha": 1.67,
-    "cena": 47373,
-    "vydrz": 14
-  },
-  {
-    "id": 130,
-    "nazev": "Apple MacBook Air 2024",
-    "vykon": 56,
-    "vaha": 1.87,
-    "cena": 29622,
-    "vydrz": 9
-  },
-  {
-    "id": 131,
-    "nazev": "Huawei MateBook D14 Plus",
-    "vykon": 56,
-    "vaha": 1.42,
-    "cena": 45660,
-    "vydrz": 7
-  },
-  {
-    "id": 132,
-    "nazev": "Xiaomi Mi Notebook Pro 2024",
-    "vykon": 65,
-    "vaha": 1.07,
-    "cena": 27994,
-    "vydrz": 7
-  },
-  {
-    "id": 133,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 66,
-    "vaha": 1.32,
-    "cena": 16556,
-    "vydrz": 8
-  },
-  {
-    "id": 134,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 98,
-    "vaha": 1.77,
-    "cena": 34528,
-    "vydrz": 15
-  },
-  {
-    "id": 135,
-    "nazev": "Acer Aspire 7 Pro",
-    "vykon": 61,
-    "vaha": 1.48,
-    "cena": 30518,
-    "vydrz": 8
-  },
-  {
-    "id": 136,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 68,
-    "vaha": 1.85,
-    "cena": 31675,
-    "vydrz": 16
-  },
-  {
-    "id": 137,
-    "nazev": "Samsung Galaxy Book Plus",
-    "vykon": 79,
-    "vaha": 1.13,
-    "cena": 45865,
-    "vydrz": 12
-  },
-  {
-    "id": 138,
-    "nazev": "Xiaomi Mi Notebook Pro Pro",
-    "vykon": 92,
-    "vaha": 1.57,
-    "cena": 32915,
-    "vydrz": 5
-  },
-  {
-    "id": 139,
-    "nazev": "Apple MacBook Pro Edition",
-    "vykon": 88,
-    "vaha": 1.74,
-    "cena": 37376,
-    "vydrz": 13
-  },
-  {
-    "id": 140,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 66,
-    "vaha": 1.61,
-    "cena": 21703,
-    "vydrz": 11
-  },
-  {
-    "id": 141,
-    "nazev": "Google Pixelbook Go",
-    "vykon": 62,
-    "vaha": 1.08,
-    "cena": 39057,
-    "vydrz": 11
-  },
-  {
-    "id": 142,
-    "nazev": "Razer Blade 15",
-    "vykon": 65,
-    "vaha": 1.92,
-    "cena": 23649,
-    "vydrz": 8
-  },
-  {
-    "id": 143,
-    "nazev": "Microsoft Surface Laptop Edition",
-    "vykon": 86,
-    "vaha": 1.89,
-    "cena": 43605,
-    "vydrz": 8
-  },
-  {
-    "id": 144,
-    "nazev": "Razer Blade 15 2024",
-    "vykon": 100,
-    "vaha": 1.81,
-    "cena": 49295,
-    "vydrz": 9
-  },
-  {
-    "id": 145,
-    "nazev": "Apple MacBook Air",
-    "vykon": 52,
-    "vaha": 1.16,
-    "cena": 23818,
-    "vydrz": 8
-  },
-  {
-    "id": 146,
-    "nazev": "MSI Prestige 14 Plus",
-    "vykon": 93,
-    "vaha": 1.28,
-    "cena": 35374,
-    "vydrz": 8
-  },
-  {
-    "id": 147,
-    "nazev": "Apple MacBook Air Max",
-    "vykon": 82,
-    "vaha": 1.24,
-    "cena": 30795,
-    "vydrz": 13
-  },
-  {
-    "id": 148,
-    "nazev": "Microsoft Surface Laptop Pro",
-    "vykon": 94,
-    "vaha": 1.99,
-    "cena": 31521,
-    "vydrz": 5
-  },
-  {
-    "id": 149,
-    "nazev": "HP Spectre x360 Plus",
-    "vykon": 100,
-    "vaha": 1.81,
-    "cena": 33364,
-    "vydrz": 8
-  },
-  {
-    "id": 150,
-    "nazev": "Dell XPS 13 Edition",
-    "vykon": 94,
-    "vaha": 1.36,
-    "cena": 25238,
-    "vydrz": 10
-  },
-  {
-    "id": 151,
-    "nazev": "MSI Prestige 14",
-    "vykon": 70,
-    "vaha": 1.3,
-    "cena": 35566,
-    "vydrz": 8
-  },
-  {
-    "id": 152,
-    "nazev": "Google Pixelbook Go Max",
-    "vykon": 50,
-    "vaha": 1.87,
-    "cena": 35809,
-    "vydrz": 7
-  },
-  {
-    "id": 153,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 69,
-    "vaha": 1.93,
-    "cena": 42594,
-    "vydrz": 10
-  },
-  {
-    "id": 154,
-    "nazev": "Asus ZenBook 14 Pro",
-    "vykon": 77,
-    "vaha": 1.51,
-    "cena": 39328,
-    "vydrz": 9
-  },
-  {
-    "id": 155,
-    "nazev": "Xiaomi Mi Notebook Pro Max",
-    "vykon": 94,
-    "vaha": 1.1,
-    "cena": 24703,
-    "vydrz": 12
-  },
-  {
-    "id": 156,
-    "nazev": "MSI Prestige 14 Max",
-    "vykon": 60,
-    "vaha": 1.75,
-    "cena": 15996,
-    "vydrz": 13
-  },
-  {
-    "id": 157,
-    "nazev": "HP Spectre x360 Plus",
-    "vykon": 68,
-    "vaha": 1.27,
-    "cena": 44179,
-    "vydrz": 6
-  },
-  {
-    "id": 158,
-    "nazev": "Microsoft Surface Laptop",
-    "vykon": 52,
-    "vaha": 1.12,
-    "cena": 24361,
-    "vydrz": 6
-  },
-  {
-    "id": 159,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 64,
-    "vaha": 1.71,
-    "cena": 15464,
-    "vydrz": 7
-  },
-  {
-    "id": 160,
-    "nazev": "Samsung Galaxy Book",
-    "vykon": 95,
-    "vaha": 1.07,
-    "cena": 28763,
-    "vydrz": 16
-  },
-  {
-    "id": 161,
-    "nazev": "Acer Aspire 7 Plus",
-    "vykon": 75,
-    "vaha": 1.5,
-    "cena": 36675,
-    "vydrz": 12
-  },
-  {
-    "id": 162,
-    "nazev": "Lenovo ThinkPad X1 Carbon Pro",
-    "vykon": 75,
-    "vaha": 1.48,
-    "cena": 18970,
-    "vydrz": 15
-  },
-  {
-    "id": 163,
-    "nazev": "Dell XPS 13 2024",
-    "vykon": 100,
-    "vaha": 1.71,
-    "cena": 17596,
-    "vydrz": 5
-  },
-  {
-    "id": 164,
-    "nazev": "Apple MacBook Pro Edition",
-    "vykon": 77,
-    "vaha": 1.7,
-    "cena": 36457,
-    "vydrz": 12
-  },
-  {
-    "id": 165,
-    "nazev": "Razer Blade 15 2024",
-    "vykon": 92,
-    "vaha": 1.78,
-    "cena": 47862,
-    "vydrz": 7
-  },
-  {
-    "id": 166,
-    "nazev": "Xiaomi Mi Notebook Pro Max",
-    "vykon": 76,
-    "vaha": 1.2,
-    "cena": 35604,
-    "vydrz": 13
-  },
-  {
-    "id": 167,
-    "nazev": "Apple MacBook Air Edition",
-    "vykon": 97,
-    "vaha": 1.73,
-    "cena": 38762,
-    "vydrz": 9
-  },
-  {
-    "id": 168,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 59,
-    "vaha": 1.6,
-    "cena": 36363,
-    "vydrz": 11
-  },
-  {
-    "id": 169,
-    "nazev": "Lenovo ThinkPad X1 Carbon",
-    "vykon": 58,
-    "vaha": 1.94,
-    "cena": 27185,
-    "vydrz": 5
-  },
-  {
-    "id": 170,
-    "nazev": "Asus ZenBook 14 Max",
-    "vykon": 96,
-    "vaha": 1.05,
-    "cena": 37952,
-    "vydrz": 15
-  },
-  {
-    "id": 171,
-    "nazev": "Apple MacBook Pro Plus",
-    "vykon": 57,
-    "vaha": 1.53,
-    "cena": 36523,
-    "vydrz": 10
-  },
-  {
-    "id": 172,
-    "nazev": "Apple MacBook Pro Plus",
-    "vykon": 81,
-    "vaha": 1.66,
-    "cena": 27116,
-    "vydrz": 12
-  },
-  {
-    "id": 173,
-    "nazev": "Microsoft Surface Laptop Max",
-    "vykon": 87,
-    "vaha": 1.27,
-    "cena": 19672,
-    "vydrz": 11
-  },
-  {
-    "id": 174,
-    "nazev": "Apple MacBook Pro Max",
-    "vykon": 91,
-    "vaha": 1.54,
-    "cena": 31332,
-    "vydrz": 12
-  },
-  {
-    "id": 175,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 72,
-    "vaha": 1.28,
-    "cena": 42305,
-    "vydrz": 16
-  },
-  {
-    "id": 176,
-    "nazev": "Apple MacBook Air Edition",
-    "vykon": 57,
-    "vaha": 1.18,
-    "cena": 25284,
-    "vydrz": 5
-  },
-  {
-    "id": 177,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 77,
-    "vaha": 1.81,
-    "cena": 32904,
-    "vydrz": 16
-  },
-  {
-    "id": 178,
-    "nazev": "HP Spectre x360 Edition",
-    "vykon": 55,
-    "vaha": 1.52,
-    "cena": 41286,
-    "vydrz": 9
-  },
-  {
-    "id": 179,
-    "nazev": "HP Spectre x360 Plus",
-    "vykon": 90,
-    "vaha": 1.88,
-    "cena": 21744,
-    "vydrz": 10
-  },
-  {
-    "id": 180,
-    "nazev": "Dell XPS 13 Pro",
-    "vykon": 60,
-    "vaha": 1.68,
-    "cena": 37909,
-    "vydrz": 13
-  },
-  {
-    "id": 181,
-    "nazev": "Huawei MateBook D14 Edition",
-    "vykon": 87,
-    "vaha": 1.11,
-    "cena": 39332,
-    "vydrz": 9
-  },
-  {
-    "id": 182,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 66,
-    "vaha": 1.68,
-    "cena": 31769,
-    "vydrz": 10
-  },
-  {
-    "id": 183,
-    "nazev": "Asus ZenBook 14 2024",
-    "vykon": 52,
-    "vaha": 2.0,
-    "cena": 40327,
-    "vydrz": 13
-  },
-  {
-    "id": 184,
-    "nazev": "LG Gram 14 2024",
-    "vykon": 96,
-    "vaha": 1.61,
-    "cena": 22452,
-    "vydrz": 6
-  },
-  {
-    "id": 185,
-    "nazev": "Dell XPS 13",
-    "vykon": 52,
-    "vaha": 1.71,
-    "cena": 26615,
-    "vydrz": 9
-  },
-  {
-    "id": 186,
-    "nazev": "Apple MacBook Air Pro",
-    "vykon": 94,
-    "vaha": 1.48,
-    "cena": 40650,
-    "vydrz": 9
-  },
-  {
-    "id": 187,
-    "nazev": "Dell XPS 13 Max",
-    "vykon": 100,
-    "vaha": 1.92,
-    "cena": 34596,
-    "vydrz": 16
-  },
-  {
-    "id": 188,
-    "nazev": "Huawei MateBook D14 2024",
-    "vykon": 73,
-    "vaha": 1.23,
-    "cena": 18244,
-    "vydrz": 13
-  },
-  {
-    "id": 189,
-    "nazev": "LG Gram 14 Max",
-    "vykon": 70,
-    "vaha": 1.35,
-    "cena": 24500,
-    "vydrz": 5
-  },
-  {
-    "id": 190,
-    "nazev": "Acer Aspire 7 Plus",
-    "vykon": 65,
-    "vaha": 1.64,
-    "cena": 40170,
-    "vydrz": 9
-  },
-  {
-    "id": 191,
-    "nazev": "Samsung Galaxy Book Plus",
-    "vykon": 58,
-    "vaha": 1.37,
-    "cena": 31206,
-    "vydrz": 8
-  },
-  {
-    "id": 192,
-    "nazev": "HP Spectre x360 Pro",
-    "vykon": 80,
-    "vaha": 1.86,
-    "cena": 41628,
-    "vydrz": 9
-  },
-  {
-    "id": 193,
-    "nazev": "Microsoft Surface Laptop Max",
-    "vykon": 86,
-    "vaha": 1.38,
-    "cena": 23851,
-    "vydrz": 14
-  },
-  {
-    "id": 194,
-    "nazev": "LG Gram 14 Pro",
-    "vykon": 54,
-    "vaha": 1.48,
-    "cena": 29935,
-    "vydrz": 6
-  },
-  {
-    "id": 195,
-    "nazev": "Apple MacBook Air Plus",
-    "vykon": 67,
-    "vaha": 1.65,
-    "cena": 47900,
-    "vydrz": 9
-  },
-  {
-    "id": 196,
-    "nazev": "Xiaomi Mi Notebook Pro Edition",
-    "vykon": 87,
-    "vaha": 2.0,
-    "cena": 29164,
-    "vydrz": 7
-  },
-  {
-    "id": 197,
-    "nazev": "HP Spectre x360",
-    "vykon": 84,
-    "vaha": 1.62,
-    "cena": 34811,
-    "vydrz": 13
-  },
-  {
-    "id": 198,
-    "nazev": "Apple MacBook Air Max",
-    "vykon": 67,
-    "vaha": 1.38,
-    "cena": 28874,
-    "vydrz": 13
-  },
-  {
-    "id": 199,
-    "nazev": "HP Spectre x360 Plus",
-    "vykon": 86,
-    "vaha": 1.92,
-    "cena": 24700,
-    "vydrz": 8
-  },
-  {
-    "id": 200,
-    "nazev": "Google Pixelbook Go Plus",
-    "vykon": 91,
-    "vaha": 1.64,
-    "cena": 32539,
-    "vydrz": 7
   }
 ]
