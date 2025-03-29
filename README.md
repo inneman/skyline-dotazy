@@ -6,8 +6,6 @@ Tento projekt implementuje interaktivní webovou aplikaci pro demonstraci koncep
 
 ### Demo
 
-Aplikace je dostupná online na: [odkaz na live demo]
-
 ![Screenshot aplikace](screenshot.png)
 
 ### Funkce
@@ -55,7 +53,7 @@ Aplikace je dostupná online na: [odkaz na live demo]
 ### Použité technologie
 
 - **Frontend:** React.js, D3.js, Bootstrap 5
-- **Backend:** Node.js, Express.js
+- **Backend:** Node.js, Express.js, Benchmark.js
 - **Datové struktury:** JSON
 
 ### Skyline algoritmy
@@ -77,10 +75,9 @@ Projekt implementuje následující algoritmy:
 ### Měření výkonu
 
 Aplikace využívá pokročilý systém měření výkonu:
-- Ultra-přesné měření pomocí API `performance.now()`
-- Opakované měření (až 10 000 iterací) pro přesné výsledky
-- Eliminace vlivu JIT kompilace pomocí "zahřívacích běhů"
-- Výsledky měření v nanosekundách i milisekundách
+- Přesné měření pomocí knihovny Benchmark.js
+- Možnost testování na různě velkých datových sadách (30 až 20 000 notebooků)
+- Výpočet metrik jako operace za sekundu, průměrný čas a relativní chyba měření
 
 ### Autor
 
