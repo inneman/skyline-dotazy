@@ -1,84 +1,98 @@
-# Vizualizace Skyline dotazů
+# Skyline Queries
 
-### O projektu
+## Spuštění klienta a serveru
 
-Tento projekt implementuje interaktivní webovou aplikaci pro demonstraci konceptu **skyline dotazů** (skyline queries) a různých algoritmů pro jejich efektivní výpočet. Skyline dotazy umožňují nalezení objektů, které nejsou dominovány jinými objekty v datové sadě podle více kritérií současně.
+1. Naklonujte repositář do lokálního počítače.
+2. Přepněte se do složky projektu.
+3. Nainstalujte knihovny pomocí příkazu `npm install` ve složkách `client` a `server`.
+4. Spusťte server:
 
-### Demo
-
-![Screenshot aplikace](screenshot.png)
-
-### Funkce
-
-- Vizualizace notebooků a jejich parametrů ve 2D grafu
-- Implementace 4 algoritmů pro výpočet skyline:
-  - Brute-force (O(n²))
-  - Divide & Conquer (O(n·log²n))
-  - Sort Filter Skyline (O(n·log n))
-  - Maxima Finding (O(n·log n))
-- Interaktivní výběr parametrů pro porovnání
-- Pokročilé měření výkonu algoritmů s přesností na nanosekundy
-- Vizualizace skyline pomocí "schodovitých" linií
-
-### Instalace a spuštění
-
-#### Požadavky
-- Node.js (v14+)
-- npm nebo yarn
-
-#### Kroky pro spuštění
-
-1. **Klonování repozitáře:**
-   ```bash
-   git clone https://github.com/username/skyline-query-explorer.git
-   cd skyline-query-explorer
-   
-2. **Instalace závislostí:**
-   ```bash
-   npm install
-
-3. **Spuštění vývojového serveru:**
-   ```bash
-   npm start
-
-4. **Spuštění backend serveru:**
    ```bash
    cd server
-   npm install
+   node index.js
+   ```
+
+   Backend poběží na adrese `http://localhost:3001`
+
+5. Spusťte klientskou aplikaci:
+
+   ```bash
+   cd ../src
    npm start
+   ```
 
-5. **Aplikace dostupná na:**
-    http://localhost:3000
+   Frontend se otevře na `http://localhost:3000`
 
-### Použité technologie
+> Je třeba mít nainstalovaný Node.js (verze 14+) a npm.
+
+---
+
+## Popis projektu
+
+Tento projekt implementuje interaktivní webovou aplikaci pro demonstraci konceptu **skyline dotazů** nad daty notebooků. Cílem je porovnání různých algoritmů pro výpočet skyline a jejich vizualizace.
+
+Uživatel vybírá dvě vlastnosti notebooků (např. výkon a cena) a výsledkem je graf s body (notebooky) a schodovitou skyline křivkou, která zobrazuje nedominované produkty.
+
+---
+
+## Použité algoritmy
+
+V aplikaci jsou implementovány 4 skyline algoritmy:
+
+- **Brute-force** (O(n²))
+- **Divide & Conquer** (O(n log² n))
+- **Sort Filter Skyline (SFS)** (O(n log n))
+- **Maxima Finding** (O(n log n))
+
+---
+
+## Implementace
 
 - **Frontend:** React.js, D3.js, Bootstrap 5
-- **Backend:** Node.js, Express.js, Benchmark.js
-- **Datové struktury:** JSON
+- **Backend:** Node.js, Express.js
+- **Benchmark:** `performance.now()` a Benchmark.js
+- **Datový formát:** JSON
+- **Zobrazení:** interaktivní scatter plot (Recharts) s vlastním tooltipem
 
-### Skyline algoritmy
+---
 
-Projekt implementuje následující algoritmy:
+## Vizualizace a interaktivita
 
-1. **Brute-force**  
-   Nejjednodušší přístup porovnávající každý bod s každým. Časová složitost **O(n²)**.
+- Zobrazení notebooků v 2D grafu podle zvolených atributů
+- Schodovitá skyline čára spojující nedominované body
+- Interaktivní legenda, tooltipy a tabulka dat
+- Dynamické filtrování a změna směru optimalizace (např. max/min cena)
 
-2. **Divide & Conquer**  
-   Rekurzivní algoritmus rozdělující problém na menší části. Časová složitost **O(n·log²n)**.
+---
 
-3. **Sort Filter Skyline (SFS)**  
-   Využívá předřazení bodů podle součtu atributů. Časová složitost **O(n·log n)**.
+## Měření výkonu (Experimenty)
 
-4. **Maxima Finding**  
-   Optimalizovaný algoritmus kombinující předběžné třídění a dynamickou eliminaci. Časová složitost **O(n·log n)**.
+Součástí aplikace je komponenta `PerformanceChart`, která:
 
-### Měření výkonu
+- Spouští výpočet skyline na **10 000 generovaných notebooků**
+- Měří čas pomocí `performance.now()` s přesností na milisekundy
+- Pro každý algoritmus zobrazí dobu v ns a počet bodů ve skyline
 
-Aplikace využívá pokročilý systém měření výkonu:
-- Přesné měření pomocí knihovny Benchmark.js
-- Možnost testování na různě velkých datových sadách (30 až 20 000 notebooků)
-- Výpočet metrik jako operace za sekundu, průměrný čas a relativní chyba měření
+Ukázkové hodnoty:
 
-### Autor
+| Algoritmus       | Čas (ns)   | Počet bodů |
+|------------------|-------------|---------------|
+| Maxima Finding   | 82 000 000 | 314           |
+| SFS              | 110 000 000 | 314           |
+| Divide & Conquer | 245 000 000 | 314           |
+| Brute-force      | 890 000 000 | 314           |
 
-Šimon Inneman
+> Data jsou generována pseudo-náhodně v realistických rozsazích (např. cena 15k–90k, výkon 60–100).
+
+---
+
+## Diskuze
+
+Při návrhu řešení byla hlavní prioritou přehlednost a jednoduchost použití. Místo benchmarkovacích knihoven byl pro přesné měření doby výpočtu použit performance.now() s ručně měřeným jednorázovým průchodem algoritmu nad datasetem o 10 000 prvcích. Tato velikost byla zvolena záměrně jako kompromis — pro menší datasety jsou rozdíly mezi algoritmy velmi malé a hůře viditelné, zatímco větší datasety mohou způsobovat zátěž v prohlížeči nebo zbytečně zdržovat běh měření. Díky tomu lze porovnat algoritmy rychle a názorně bez potřeby složitého ladění nebo vícenásobného opakování. Kromě toho aplikace zachovává jednoduché a rychlé UI bez zatížení prohlížeče a měření se provádí okamžitě po kliknutí tlačítka.
+
+## Závěr
+
+Aplikace slouží jako demonstrační nástroj pro vizualizaci a testování skyline dotazů. Nabízí interaktivní grafické rozhraní, porovnání algoritmů, výkonové testy a podporuje přímou analýzu vztahů mezi atributy produktů.
+
+Autor: **Šimon Inneman**
+
