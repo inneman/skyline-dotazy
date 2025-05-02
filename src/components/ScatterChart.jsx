@@ -1,185 +1,186 @@
-import React, { useEffect, useRef } from "react";
-import * as d3 from "d3";
+import React, { useState, useRef, useEffect } from 'react';
+import {
+  ComposedChart, Scatter, XAxis, YAxis, CartesianGrid,
+  Legend, ResponsiveContainer, Line
+} from 'recharts';
 
-const width = 1200;
-const height = 900;
-const marginTop = 25;
-const marginRight = 20;
-const marginBottom = 35;
-const marginLeft = 80;
-
-export default function ScatterChart({
+export default function NotebookScatterChart({
   notebooks = [],
+  skyline = [],
   xAttribute,
   yAttribute,
   xAscend,
-  yAscend,
-  skyline = [],
+  yAscend
 }) {
-  const ref = useRef();
+  const chartContainerRef = useRef(null);
+  const [tooltip, setTooltip] = useState({
+    active: false,
+    content: "",
+    x: 0,
+    y: 0
+  });
+
+  const [shouldShowSkyline, setShouldShowSkyline] = useState(true);
+  const prevAttributesRef = useRef({ x: xAttribute, y: yAttribute });
 
   useEffect(() => {
-    // Vytvoříme kopii a seřadíme všechny notebooky podle hodnoty na ose X
-    const sortedNotebooks = [...notebooks].sort((a, b) =>
-      xAscend ? a[xAttribute] - b[xAttribute] : b[xAttribute] - a[xAttribute]
-    );
+    if (prevAttributesRef.current.x !== xAttribute ||
+        prevAttributesRef.current.y !== yAttribute) {
+      setShouldShowSkyline(false);
+    } else {
+      setShouldShowSkyline(true);
+    }
+    prevAttributesRef.current = { x: xAttribute, y: yAttribute };
+  }, [xAttribute, yAttribute, skyline]);
 
-    // Seřadíme skyline body podle stejného klíče – ne podle id!
+  const closeTooltip = () => {
+    setTooltip(prev => ({ ...prev, active: false }));
+  };
+
+  if (!notebooks || notebooks.length === 0) {
+    return <div>Žádná data k zobrazení</div>;
+  }
+
+  const stairPoints = [];
+  if (shouldShowSkyline && skyline.length > 0) {
     const sortedSkyline = [...skyline].sort((a, b) =>
       xAscend ? a[xAttribute] - b[xAttribute] : b[xAttribute] - a[xAttribute]
     );
 
-    const svg = d3.select(ref.current);
-    svg.selectAll("*").remove();
-    if (notebooks.length === 0) return;
-
-    // Vytvoření škál na základě všech notebooků
-    const xScale = d3
-      .scaleLinear()
-      .domain(d3.extent(sortedNotebooks, (d) => d[xAttribute]))
-      .nice()
-      .range(xAscend ? [marginLeft, width - marginRight] : [width - marginRight, marginLeft]);
-
-    const yScale = d3
-      .scaleLinear()
-      .domain(d3.extent(sortedNotebooks, (d) => d[yAttribute]))
-      .nice()
-      .range(yAscend ? [height - marginBottom, marginTop] : [marginTop, height - marginBottom]);
-
-    // Vykreslení os
-    svg
-      .append("g")
-      .attr("transform", `translate(0,${height - marginBottom})`)
-      .call(d3.axisBottom(xScale).ticks(width / 80))
-      .call((g) => g.select(".domain").remove())
-      .call((g) =>
-        g
-          .selectAll(".tick line")
-          .clone()
-          .attr("y2", -height)
-          .attr("stroke-opacity", 0.1)
-      )
-      .call((g) =>
-        g
-          .append("text")
-          .attr("x", width - 4)
-          .attr("y", -4)
-          .attr("font-weight", "bold")
-          .attr("text-anchor", "end")
-          .attr("fill", "currentColor")
-          .text(`${xAttribute} →`)
-      );
-
-    svg
-      .append("g")
-      .attr("transform", `translate(${marginLeft},0)`)
-      .call(d3.axisLeft(yScale).ticks(null))
-      .call((g) => g.select(".domain").remove())
-      .call((g) =>
-        g
-          .selectAll(".tick line")
-          .clone()
-          .attr("x2", width)
-          .attr("stroke-opacity", 0.1)
-      )
-      .call((g) =>
-        g
-          .select(".tick:last-of-type text")
-          .clone()
-          .attr("x", 4)
-          .attr("text-anchor", "start")
-          .attr("font-weight", "bold")
-          .text(`↑ ${yAttribute}`)
-      );
-
-    // Vykreslení všech notebooků jako modré tečky
-    svg
-      .selectAll(".dot")
-      .data(sortedNotebooks)
-      .enter()
-      .append("circle")
-      .attr("class", "dot")
-      .attr("r", 3.5)
-      .attr("cx", (d) => xScale(d[xAttribute]))
-      .attr("cy", (d) => yScale(d[yAttribute]))
-      .style("fill", "#0000bb")
-      .on("mouseover", (event, d) => {
-        const tooltip = d3
-          .select("body")
-          .append("div")
-          .attr("class", "tooltip")
-          .style("position", "absolute")
-          .style("background-color", "white")
-          .style("border", "solid 1px #ccc")
-          .style("border-radius", "5px")
-          .style("padding", "10px")
-          .style("pointer-events", "none")
-          .style("opacity", 0);
-
-        tooltip
-          .html(`Notebook ID: ${d.id}`)
-          .style("left", event.pageX + 10 + "px")
-          .style("top", event.pageY - 10 + "px")
-          .style("opacity", 1);
-      })
-      .on("mouseout", () => d3.select(".tooltip").remove());
-
-    // Vykreslení skyline čáry - ZMĚNĚNO z curveStepAfter na curveStepBefore pro schody nahoru
-    if (sortedSkyline.length > 0) {
-      svg
-        .append("path")
-        .datum(sortedSkyline)
-        .attr("fill", "none")
-        .attr("stroke", "red")
-        .attr("stroke-width", 2)
-        .attr(
-          "d",
-          d3
-            .line()
-            .curve(d3.curveStepBefore) // ZMĚNA ZDE - z curveStepAfter na curveStepBefore
-            .x((d) => xScale(d[xAttribute]))
-            .y((d) => yScale(d[yAttribute]))
-        );
-      // Vykreslení červených teček pro každý bod skyline
-      svg
-        .selectAll(".skyline-dot")
-        .data(sortedSkyline)
-        .enter()
-        .append("circle")
-        .attr("class", "skyline-dot")
-        .attr("r", 5)
-        .attr("cx", (d) => xScale(d[xAttribute]))
-        .attr("cy", (d) => yScale(d[yAttribute]))
-        .style("fill", "red")
-        .on("mouseover", (event, d) => {
-          const tooltip = d3
-            .select("body")
-            .append("div")
-            .attr("class", "tooltip")
-            .style("position", "absolute")
-            .style("background-color", "white")
-            .style("border", "solid 1px #ccc")
-            .style("border-radius", "5px")
-            .style("padding", "10px")
-            .style("pointer-events", "none")
-            .style("opacity", 0);
-
-          tooltip
-            .html(`Notebook ID: ${d.id}`)
-            .style("left", event.pageX + 10 + "px")
-            .style("top", event.pageY - 10 + "px")
-            .style("opacity", 1);
-        })
-        .on("mouseout", () => d3.select(".tooltip").remove());
+    for (let i = 0; i < sortedSkyline.length; i++) {
+      const current = sortedSkyline[i];
+      stairPoints.push(current);
+      if (i < sortedSkyline.length - 1) {
+        const next = sortedSkyline[i + 1];
+        stairPoints.push({
+          ...current,
+          [xAttribute]: next[xAttribute],
+          isStepPoint: true
+        });
+      }
     }
-  }, [notebooks, xAttribute, yAttribute, xAscend, yAscend, skyline]);
+  }
+
+  const xValues = notebooks.map(nb => nb[xAttribute]);
+  const yValues = notebooks.map(nb => nb[yAttribute]);
+  const minX = Math.min(...xValues) * 0.95;
+  const maxX = Math.max(...xValues) * 1.05;
+  const minY = Math.min(...yValues) * 0.95;
+  const maxY = Math.max(...yValues) * 1.05;
+  const xDomain = xAscend ? [minX, maxX] : [maxX, minX];
+  const yDomain = yAscend ? [minY, maxY] : [maxY, minY];
+
+  const axisLabels = {
+    vykon: 'Výkon procesoru',
+    cena: 'Cena (Kč)',
+    vaha: 'Váha (kg)',
+    vydrz: 'Výdrž baterie (h)'
+  };
+
+  const handlePointMouseOver = (data, index, e) => {
+    const { clientX, clientY } = e;
+    setTooltip({
+      active: true,
+      content: `ID: ${data.id}`,
+      x: clientX,
+      y: clientY - 30
+    });
+  };
 
   return (
-    <svg
-      ref={ref}
-      width={width}
-      height={height}
-      viewBox={`0 0 ${width} ${height}`}
-    ></svg>
+    <div
+      ref={chartContainerRef}
+      style={{ width: '100%', height: '100%', position: 'relative' }}
+      onMouseLeave={closeTooltip}
+    >
+      {tooltip.active && (
+        <div
+          style={{
+            position: 'fixed',
+            left: tooltip.x + 'px',
+            top: tooltip.y + 'px',
+            backgroundColor: 'white',
+            padding: '5px 8px',
+            border: '1px solid #ccc',
+            borderRadius: '4px',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
+            zIndex: 1000,
+            pointerEvents: 'none',
+            transform: 'translate(-50%, -100%)'
+          }}
+        >
+          {tooltip.content}
+        </div>
+      )}
+
+      <ResponsiveContainer width="100%" height="100%" aspect={16 / 9}>
+        <ComposedChart margin={{ top: 20, right: 30, bottom: 40, left: 50 }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            type="number"
+            dataKey={xAttribute}
+            domain={xDomain}
+            label={{
+              value: axisLabels[xAttribute] || xAttribute,
+              position: 'bottom',
+              offset: 20,
+              fontSize: 14
+            }}
+          />
+          <YAxis
+            type="number"
+            dataKey={yAttribute}
+            domain={yDomain}
+            label={{
+              value: axisLabels[yAttribute] || yAttribute,
+              angle: -90,
+              position: 'left',
+              offset: 10,
+              fontSize: 14
+            }}
+          />
+          <Legend verticalAlign="top" height={36} />
+          <Scatter
+            name="Všechny notebooky"
+            data={notebooks}
+            fill="#8884d8"
+            fillOpacity={0.7}
+            stroke="#6666aa"
+            strokeWidth={1}
+            shape="circle"
+            legendType="circle"
+            radius={5}
+            onMouseOver={handlePointMouseOver}
+          />
+          {shouldShowSkyline && stairPoints.length > 0 && (
+            <Line
+              name="Skyline hranice"
+              type="linear"
+              dataKey={yAttribute}
+              data={stairPoints}
+              stroke="#ff4d4f"
+              strokeWidth={2}
+              dot={false}
+              activeDot={false}
+              isAnimationActive={false}
+            />
+          )}
+          {shouldShowSkyline && skyline.length > 0 && (
+            <Scatter
+              name="Skyline notebooky"
+              data={skyline}
+              fill="#ff4d4f"
+              fillOpacity={0.9}
+              stroke="#cc0000"
+              strokeWidth={1}
+              shape="circle"
+              legendType="circle"
+              radius={6}
+              onMouseOver={handlePointMouseOver}
+            />
+          )}
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
